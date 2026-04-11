@@ -24,7 +24,7 @@ const FounderMessage = () => {
             <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-full h-full border border-[#d84a3d]/20 rounded-[30px] sm:rounded-[40px]"></div>
 
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+              src="/img37.jpeg"
               alt="Founder"
               className="relative w-full h-[300px] sm:h-[380px] md:h-[420px] object-cover rounded-[30px] sm:rounded-[40px] shadow-2xl"
             />
@@ -74,7 +74,7 @@ const FounderMessage = () => {
             {/* Signature */}
             <div className="mt-6 sm:mt-8">
               <h4 className="text-gray-900 font-semibold">
-                Founder Name
+                Shaikh Ahmad Shaikh Ahmad
               </h4>
               <p className="text-gray-500 text-sm">
                 Divyang Seva Foundation

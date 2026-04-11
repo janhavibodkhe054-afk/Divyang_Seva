@@ -38,7 +38,7 @@ const AboutHero = () => {
                        border-white shadow-2xl md:hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7"
+              src="/img5.jpeg"
               alt="about us"
               className="w-full h-full object-cover"
             />
@@ -57,7 +57,7 @@ const AboutHero = () => {
                        overflow-hidden border-[6px] border-white shadow-2xl z-20"
           >
             <img
-              src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7"
+              src="/img5.jpeg"
               alt="about us"
               className="w-full h-full object-cover"
             />

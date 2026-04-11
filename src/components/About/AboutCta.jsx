@@ -5,7 +5,7 @@ const AboutCta = () => {
     <section className="relative w-full min-h-[200px] md:min-h-[200px] overflow-hidden">
       {/* Background Image */}
       <img
-        src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
+        src="/imgbg.jpg"
         alt="support"
         className="absolute inset-0 w-full h-full object-cover"
       />

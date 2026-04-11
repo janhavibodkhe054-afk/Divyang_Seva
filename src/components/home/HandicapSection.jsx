@@ -1,22 +1,25 @@
 import React from "react";
 import { HeartHandshake, Accessibility } from "lucide-react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const HandicapSection = () => {
+  const navigate = useNavigate();
+
   const supportCards = [
     {
       title: "Rehabilitation & Wellness",
       desc: "We provide physical rehabilitation and healthcare assistance to help differently-abled individuals lead independent and confident lives.",
       icon: <HeartHandshake size={24} />,
       image:
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800",
+        "/gallery1.jpg",
     },
     {
       title: "Accessibility & Inclusion",
       desc: "Our mission is to create inclusive spaces through assistive devices and equal opportunities in education and employment.",
       icon: <Accessibility size={24} />,
       image:
-        "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800",
+        "/bg.jpg",
     },
   ];
 
@@ -96,6 +99,7 @@ const HandicapSection = () => {
 
             {/* BUTTON */}
             <motion.button
+              onClick={() => navigate("/about")}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="mt-8 bg-[#d84a3d] text-white px-6 sm:px-8 py-3 rounded-full shadow-lg hover:bg-[#bf3e33] transition-all"
@@ -121,7 +125,7 @@ const HandicapSection = () => {
               className="relative rounded-[28px] p-2 bg-white border border-[#f0d8d2] shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
             >
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200"
+                src="/gallery1.jpg"
                 alt="support"
                 className="rounded-[24px] object-cover w-full max-w-sm sm:max-w-md lg:max-w-lg h-[420px] sm:h-[500px] lg:h-[560px]"
               />
@@ -135,10 +139,10 @@ const HandicapSection = () => {
               whileInView={{ scale: 1 }}
               whileHover={{ scale: 1.06 }}
               transition={{ duration: 0.4 }}
-              className="absolute -bottom-4 left-4 sm:left-6 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full border-[5px] border-white overflow-hidden shadow-2xl"
+              className="absolute -bottom-4 left-4 sm:left-6 w-20 h-20 sm:w-28 sm:h-28 md:w-42 md:h-42 rounded-full border-[5px] border-white overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500"
+                src="logo.jpeg"
                 alt="beneficiary"
                 className="w-full h-full object-cover"
               />

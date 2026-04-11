@@ -109,7 +109,7 @@ export default function Footer() {
           <div className="space-y-4 text-gray-300 text-sm">
             <div className="flex items-center gap-3">
               <MapPin size={18} className="text-yellow-400" />
-              <span>Mumbai, Maharashtra, India</span>
+              <span>Plot 1 Gadkari Nagar, Bhusawal, District-Jalgaon, Maharashtra, Pincode 425201</span>
             </div>
 
             <a
@@ -117,7 +117,7 @@ export default function Footer() {
               className="flex items-center gap-3 hover:text-yellow-400 transition"
             >
               <Phone size={18} className="text-yellow-400" />
-              <span>+91 98765 43210</span>
+              <span>+91 9370302804</span>
             </a>
 
             <a
@@ -125,7 +125,7 @@ export default function Footer() {
               className="flex items-center gap-3 hover:text-yellow-400 transition"
             >
               <Mail size={18} className="text-yellow-400" />
-              <span>support@divyangseva.org</span>
+              <span>dsfoundation8331@gmail.com</span>
             </a>
           </div>
         </div>

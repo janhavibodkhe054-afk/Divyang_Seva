@@ -1,13 +1,16 @@
 import React from "react";
 import { FiHeart } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const SupportCards = () => {
+  const navigate = useNavigate();
+
   const cards = [
     {
       title: "Empowering Every Ability",
       image:
-        "https://www.mmpc.in/wp-content/uploads/2023/06/diffrently-able-img3.jpg",
+        "/support1.jpg",
       bg: "bg-white",
       animation: { x: -60, y: 40 },
       layout: "top-text",
@@ -15,7 +18,7 @@ const SupportCards = () => {
     {
       title: "Become A Volunteer",
       image:
-        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500",
+        "/img37.jpeg",
       bg: "bg-[#D8A13B]",
       textColor: "text-white",
       animation: { x: 0, y: 40 },
@@ -24,7 +27,7 @@ const SupportCards = () => {
     {
       title: "Help Build Better Lives",
       image:
-        "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500",
+        "/img13.jpeg",
       bg: "bg-white",
       animation: { x: 60, y: 40 },
       layout: "top-text",
@@ -141,6 +144,7 @@ const SupportCards = () => {
                 education, healthcare, and opportunities for independent living.
               </p>
               <motion.button
+                onClick={() => navigate("/contact")}
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 className="mt-7 inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-[#d84a3d] px-8 sm:px-10 py-3.5 text-white font-semibold shadow-lg hover:bg-red-700 hover:shadow-xl transition-all duration-300"

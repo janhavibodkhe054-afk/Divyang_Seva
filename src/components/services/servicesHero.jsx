@@ -6,7 +6,7 @@ const ServicesHero = () => {
     <section className="relative w-full h-[220px] sm:h-[260px] md:h-[320px] overflow-hidden">
       {/* Background Image */}
       <img
-        src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7"
+        src="/heroS.webp"
         alt="services"
         className="absolute inset-0 w-full h-full object-cover"
       />

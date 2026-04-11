@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { FiArrowRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
-    <section className="w-full min-h-screen relative overflow-hidden">
+    <section className="w-full min-h-screen relative overflow-hidden md:-mt-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
         {/* Left Content */}
         <div className="relative bg-[#171720] text-white flex items-center px-6 sm:px-10 md:px-14 lg:px-16 py-16">
@@ -30,20 +32,20 @@ const Hero = () => {
               need.
             </p>
 
-            <Link
-              to="/donate"
+            <button
+              onClick={() => navigate("/donate")}
               className="inline-flex items-center gap-2 bg-[#d84a3d] hover:bg-[#bf3e33] px-6 sm:px-7 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base shadow-lg hover:shadow-xl transition duration-300"
             >
               Donate Now
               <FiArrowRight />
-            </Link>
+            </button>
           </div>
         </div>
 
         {/* Right Image */}
         <div className="relative min-h-[350px] sm:min-h-[500px] lg:min-h-screen">
           <img
-            src="https://thumbs.dreamstime.com/b/jodhpur-rajasthan-india-may-poor-helpless-handicapped-old-woman-sitting-wheelchair-wearing-mask-roaming-road-jodhpur-183617364.jpg?w=992"
+            src="/img1.jpeg"
             alt="ngo hero"
             className="w-full h-full object-cover"
           />

@@ -10,6 +10,32 @@ import {
 } from "react-icons/fi";
 
 const Donate = () => {
+
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const name = form[0].value;
+  const email = form[1].value;
+  const phone = form[2].value;
+  const address = form[3].value;
+  const message = form[4].value;
+
+  const text = `Donation Details:%0A
+Name: ${name}%0A
+Email: ${email}%0A
+Phone: ${phone}%0A
+Address: ${address}%0A
+Message: ${message}%0A
+Amount: ₹${amount}`;
+
+  const whatsappNumber = "919370302804";
+
+  const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+  window.open(url, "_blank");
+};
   const [amount, setAmount] = useState("1000");
 
   const presetAmounts = ["500", "1000", "2500", "5000", "10000"];
@@ -19,7 +45,7 @@ const Donate = () => {
       {/* HERO SECTION */}
       <section className="relative h-[580px] overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
+          src="/img44.jpeg"
           alt="donate"
           className="w-full h-full object-cover grayscale"
         />
@@ -112,7 +138,7 @@ const Donate = () => {
             <div className="p-8 md:p-10">
               <h2 className="text-3xl font-bold mb-6">Donor Details</h2>
 
-              <form className="space-y-5">
+              <form className="space-y-5" onSubmit={handleSubmit}>
                 <div className="relative">
                   <FiUser className="absolute left-4 top-4 text-gray-400" />
                   <input
@@ -174,7 +200,7 @@ const Donate = () => {
       <section className="relative w-full min-h-[200px] md:min-h-[200px] overflow-hidden">
       {/* Background Image */}
       <img
-        src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
+        src="/imgbg.jpg"
         alt="support"
         className="absolute inset-0 w-full h-full object-cover"
       />

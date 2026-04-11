@@ -85,7 +85,7 @@ const StatsSection = () => {
     <section className="relative py-10 md:py-12 overflow-hidden">
       {/* Background */}
       <img
-        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+        src="/stats.jpeg"
         alt="foundation"
         className="absolute inset-0 w-full h-full object-cover"
       />

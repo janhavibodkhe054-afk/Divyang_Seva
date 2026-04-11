@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
             className="relative rounded-[24px] sm:rounded-[30px] overflow-hidden shadow-2xl"
           >
             <img
-              src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1000"
+              src="/chat.png"
               alt="foundation support"
               className="w-full h-[260px] sm:h-[340px] md:h-[420px] object-cover transition duration-500 hover:scale-105"
             />

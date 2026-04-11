@@ -6,103 +6,105 @@ const testimonials = [
   {
     name: "Priya Sharma",
     role: "Volunteer",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300",
     review:
-      "Divyang Seva Foundation has truly transformed lives. Their commitment towards care, rehabilitation, and education is deeply inspiring.",
+      "Divyang Seva Foundation has truly transformed lives through rehabilitation and inclusive support.",
   },
   {
     name: "Rahul Patil",
     role: "Donor",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300",
     review:
-      "I am proud to support this foundation. Their transparency, dedication, and social impact make them truly trustworthy.",
+      "Their dedication and transparency make them one of the most trustworthy NGOs I have supported.",
   },
   {
     name: "Sneha Kulkarni",
     role: "Beneficiary Family",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300",
     review:
-      "The support we received gave us hope and confidence. They treat every family with dignity and compassion.",
+      "The support we received gave our family hope, confidence, and dignity.",
+  },
+  {
+    name: "Amit Deshmukh",
+    role: "Volunteer",
+    review:
+      "Working with the foundation has been inspiring. Their service towards Divyang individuals is exceptional.",
+  },
+  {
+    name: "Pooja Joshi",
+    role: "Supporter",
+    review:
+      "They genuinely care for every life they touch and provide real help where it matters.",
+  },
+  {
+    name: "Neha Patil",
+    role: "Community Member",
+    review:
+      "Their wheelchair and rehabilitation support has changed many lives in our area.",
   },
 ];
 
 export default function TestimonialSection() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-10 lg:px-16 bg-[#fffaf5] overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 sm:py-20 bg-[#fffaf5] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 lg:mb-14"
+          viewport={{ once: true }}
+          className="text-center mb-12"
         >
-          <p className="uppercase tracking-[0.2em] text-[#d84a3d] text-xs sm:text-sm font-semibold mb-3">
+          <p className="uppercase tracking-[0.2em] text-[#d84a3d] text-sm font-semibold mb-3">
             Testimonials
           </p>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
             What People Say About Us
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-sm sm:text-base leading-7">
-            Hear from our volunteers, donors, and families whose lives
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto leading-7 text-sm sm:text-base">
+            Hear from volunteers, donors, and families whose lives
             have been touched by Divyang Seva Foundation.
           </p>
         </motion.div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {testimonials.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.15 }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.1,
-              }}
-              whileHover={{
-                y: -8,
-                scale: 1.02,
-              }}
-              className="bg-white rounded-[24px] sm:rounded-[28px] p-5 sm:p-6 lg:p-7 shadow-lg hover:shadow-2xl border border-red-50 relative transition-all duration-300"
-            >
-              {/* Quote Icon */}
-              <div className="absolute top-4 right-4 sm:top-5 sm:right-5 text-[#d84a3d]/15">
-                <Quote size={34} className="sm:w-10 sm:h-10" />
-              </div>
+        {/* Scrolling Testimonials */}
+        <div className="relative overflow-hidden">
+          <motion.div
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              repeat: Infinity,
+              duration: 20,
+              ease: "linear",
+            }}
+            className="flex gap-6 w-max"
+          >
+            {[...testimonials, ...testimonials].map((item, index) => (
+              <div
+                key={index}
+                className="w-[320px] sm:w-[350px] bg-white rounded-[24px] p-6 shadow-lg border border-red-50 flex flex-col justify-between min-h-[240px]"
+              >
+                {/* Quote */}
+                <div className="text-[#d84a3d]/15 mb-4">
+                  <Quote size={34} />
+                </div>
 
-              {/* Review */}
-              <p className="text-gray-600 leading-7 mb-6 text-sm sm:text-base pr-6">
-                "{item.review}"
-              </p>
+                {/* Review */}
+                <p className="text-gray-600 leading-7 text-sm sm:text-base flex-grow">
+                  "{item.review}"
+                </p>
 
-              {/* User Info */}
-              <div className="flex items-center gap-4">
-                <motion.img
-                  whileHover={{ scale: 1.06 }}
-                  src={item.image}
-                  alt={item.name}
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover shadow-md"
-                />
-
-                <div>
-                  <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
+                {/* Fixed Bottom Name */}
+                <div className="pt-6 border-t border-gray-100 mt-6">
+                  <h4 className="font-semibold text-gray-800">
                     {item.name}
                   </h4>
-                  <p className="text-xs sm:text-sm text-[#d84a3d]">
+                  <p className="text-sm text-[#d84a3d]">
                     {item.role}
                   </p>
                 </div>
               </div>
-            </motion.div>
-          ))}
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

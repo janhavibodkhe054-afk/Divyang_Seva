@@ -99,7 +99,7 @@ const FoundationJourney = () => {
             <div className="absolute -inset-4 bg-[#d84a3d]/10 rounded-[40px] blur-xl"></div>
 
             <img
-              src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7"
+              src="/1.png"
               alt="ngo support"
               className="relative w-full h-[420px] object-cover rounded-[40px] shadow-2xl border border-white/10"
             />

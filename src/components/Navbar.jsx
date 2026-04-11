@@ -31,9 +31,9 @@ const Navbar = () => {
       {/* Top Bar */}
       <div className="hidden md:flex bg-[#f4efef] text-[12px] text-gray-600 py-2 px-4 lg:px-8 justify-between items-center">
         <div className="flex gap-3">
-          <FiFacebook className="cursor-pointer hover:text-[#d9483b]" />
-          <FiTwitter className="cursor-pointer hover:text-[#d9483b]" />
-          <FiInstagram className="cursor-pointer hover:text-[#d9483b]" />
+          <FiFacebook className="cursor-pointer hover:text-[#d9483b] size-4" />
+          <FiTwitter className="cursor-pointer hover:text-[#d9483b] size-4" />
+          <FiInstagram className="cursor-pointer hover:text-[#d9483b] size-4" />
         </div>
 
         <div className="flex gap-6 items-center flex-wrap">

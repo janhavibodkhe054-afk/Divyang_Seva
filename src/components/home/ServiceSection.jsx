@@ -4,28 +4,28 @@ import { motion } from "framer-motion";
 const ServiceSection = () => {
   const services = [
     {
-      title: "Education Support",
-      desc: "We provide educational resources, learning support, and inclusive opportunities to help differently-abled children and underprivileged students build a brighter future.",
+      title: "Wheelchair Support",
+      desc: "We provide wheelchairs, walkers, crutches, and mobility aids to differently-abled individuals who need assistance in daily movement and independence.",
       image:
-        "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600",
+        "/img6.jpeg",
     },
     {
-      title: "Medical Aid",
-      desc: "Our foundation offers medical assistance, rehabilitation services, health camps, and essential support to improve the well-being of individuals in need.",
+      title: "Medical & Rehabilitation",
+      desc: "Our foundation organizes medical camps, therapy sessions, physiotherapy, and rehabilitation support to improve health, strength, and quality of life.",
       image:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600",
+        "/stats1.jpg",
     },
     {
-      title: "Food & Shelter",
-      desc: "We ensure access to nutritious meals, safe shelter, and daily essentials for vulnerable families and differently-abled individuals facing hardships.",
+      title: "Education Assistance",
+      desc: "We support differently-abled children with educational resources, special learning support, scholarships, and inclusive skill development opportunities.",
       image:
-        "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600",
+        "/img63.jpeg",
     },
     {
-      title: "Women Empowerment",
-      desc: "Through skill development, financial support, and employment opportunities, we empower women to become independent and confident members of society.",
+      title: "Community Care & Support",
+      desc: "We provide emotional support, family counseling, awareness programs, and social inclusion initiatives to help every individual live with dignity and respect.",
       image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600",
+        "/img19.jpeg",
     },
   ];
 

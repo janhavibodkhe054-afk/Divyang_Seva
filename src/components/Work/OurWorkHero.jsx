@@ -51,7 +51,7 @@ const OurWorkHero = () => {
         initial={{ scale: 1.15 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.8 }}
-        src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a"
+        src="/servicehero.webp"
         alt="our work"
         className="absolute inset-0 w-full h-full object-cover grayscale"
       />

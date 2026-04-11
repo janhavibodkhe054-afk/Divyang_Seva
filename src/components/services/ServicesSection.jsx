@@ -14,37 +14,37 @@ const services = [
   {
     title: "Rehabilitation Support",
     image:
-      "https://images.unsplash.com/photo-1518733057094-95b53143d2a7",
+      "/s1.jpg",
     desc: "Therapy, counseling and mobility rehabilitation support.",
   },
   {
     title: "Education Assistance",
     image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7",
+      "/img61.jpeg",
     desc: "Inclusive learning resources and skill development programs.",
   },
   {
     title: "Medical Camps",
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+      "/img38.jpeg",
     desc: "Health checkups, doctor consultations and medical guidance.",
   },
   {
     title: "Wheelchair Support",
     image:
-      "https://images.unsplash.com/photo-1576765607924-8b1a5c6d55d1",
+      "/img4.jpeg",
     desc: "Providing wheelchairs and mobility aids to the needy.",
   },
   {
     title: "Home Care Assistance",
     image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac",
+      "/img22.jpeg",
     desc: "Support services for families and home-based care.",
   },
   {
     title: "Community Awareness",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      "/img43.jpeg",
     desc: "Social awareness drives and inclusion initiatives.",
   },
 ];
@@ -105,7 +105,7 @@ const ServicesSection = () => {
 
                 <a
                   href={`https://wa.me/919370302804?text=${encodeURIComponent(
-                    `Hello, I need support for ${service.title}`
+                    `Hello, I need support for`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
