@@ -50,23 +50,28 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 px-6 md:px-16 bg-[#fffaf5] overflow-hidden">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+    <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-10 lg:px-16 bg-[#fffaf5] overflow-hidden">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         
         {/* LEFT SECTION */}
-        <div>
-          <p className="uppercase tracking-[0.2em] text-[#d84a3d] text-sm font-semibold mb-3">
+        <motion.div
+          initial={{ opacity: 0, x: -35 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="uppercase tracking-[0.2em] text-[#d84a3d] text-xs sm:text-sm font-semibold mb-3">
             Why Choose Us
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-5 sm:mb-6">
             Why People Trust <br />
             <span className="text-[#d84a3d]">
               Divyang Seva Foundation
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg leading-relaxed max-w-xl mb-8">
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-7 max-w-xl mb-6 sm:mb-8">
             We are committed to building an inclusive society where every
             differently-abled individual receives care, support, dignity,
             and opportunities to thrive confidently.
@@ -75,43 +80,51 @@ export default function WhyChooseUs() {
           {/* IMAGE */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="relative rounded-[30px] overflow-hidden shadow-2xl"
+            transition={{ duration: 0.35 }}
+            className="relative rounded-[24px] sm:rounded-[30px] overflow-hidden shadow-2xl"
           >
             <img
               src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1000"
               alt="foundation support"
-              className="w-full h-[420px] object-cover"
+              className="w-full h-[260px] sm:h-[340px] md:h-[420px] object-cover transition duration-500 hover:scale-105"
             />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/10"></div>
 
-            {/* Floating shape */}
-            <div className="absolute -bottom-5 -right-5 w-24 h-24 bg-[#d84a3d]/20 rounded-full blur-xl"></div>
+            {/* Glow */}
+            <div className="absolute -bottom-5 -right-5 w-20 sm:w-24 h-20 sm:h-24 bg-[#d84a3d]/20 rounded-full blur-xl"></div>
           </motion.div>
-        </div>
+        </motion.div>
 
         {/* RIGHT REASONS */}
-        <div className="space-y-5">
+        <div className="space-y-4 sm:space-y-5">
           {reasons.map((item, index) => (
             <motion.div
               key={index}
-              whileHover={{
-                x: 8,
-                scale: 1.02,
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{
+                duration: 0.45,
+                delay: index * 0.08,
               }}
-              transition={{ duration: 0.3 }}
-              className="flex items-start gap-4 bg-white rounded-2xl p-5 shadow-md hover:shadow-xl border border-red-50"
+              whileHover={{
+                x: 6,
+                scale: 1.01,
+              }}
+              className="flex items-start gap-3 sm:gap-4 bg-white rounded-2xl p-4 sm:p-5 shadow-md hover:shadow-xl border border-red-50 transition-all duration-300"
             >
-              <div className="min-w-[52px] h-[52px] rounded-xl bg-[#fff1ee] text-[#d84a3d] flex items-center justify-center shadow-sm">
+              <div className="min-w-[46px] sm:min-w-[52px] h-[46px] sm:h-[52px] rounded-xl bg-[#fff1ee] text-[#d84a3d] flex items-center justify-center shadow-sm">
                 {item.icon}
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-1">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+
+                <p className="text-xs sm:text-sm text-gray-600 leading-6">
                   {item.desc}
                 </p>
               </div>

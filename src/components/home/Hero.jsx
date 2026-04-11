@@ -53,8 +53,6 @@ const Hero = () => {
 
           {/* Stylish bottom curve */}
           <div className="absolute bottom-0 left-0 w-full h-10 bg-[#F8F8F8] rounded-tl-[120px] block sm:hidden"></div>
-
-          
         </div>
       </div>
     </section>
