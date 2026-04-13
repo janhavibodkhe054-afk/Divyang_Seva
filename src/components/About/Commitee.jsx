@@ -5,11 +5,11 @@ const Commitee = () => {
   const members = [
     {
       sr: "01",
-      name: "Shaikh Akbar Shaikh Ahmad",
+      name: "Shaikh Edris Shaikh Sardar",
       role: "President",
       age: "48",
       profession: "Business",
-      location: "Bhadgaon, Jalgaon",
+      location: "Bhusawal, Jalgaon",
     },
     {
       sr: "02",
@@ -17,7 +17,7 @@ const Commitee = () => {
       role: "Vice President",
       age: "50",
       profession: "Business",
-      location: "Bhadgaon, Jalgaon",
+      location: "Bhusawal, Jalgaon",
     },
     {
       sr: "03",
@@ -25,7 +25,7 @@ const Commitee = () => {
       role: "Secretary",
       age: "38",
       profession: "Business",
-      location: "Bhadgaon, Jalgaon",
+      location: "Bhusawal, Jalgaon",
     },
     {
       sr: "04",
@@ -33,7 +33,7 @@ const Commitee = () => {
       role: "Member",
       age: "46",
       profession: "Business",
-      location: "Bhadgaon, Jalgaon",
+      location: "Bhusawal, Jalgaon",
     },
     {
       sr: "05",
@@ -41,7 +41,7 @@ const Commitee = () => {
       role: "Member",
       age: "43",
       profession: "Business",
-      location: "Bhadgaon, Jalgaon",
+      location: "Bhusawal, Jalgaon",
     },
     {
       sr: "06",
@@ -49,7 +49,7 @@ const Commitee = () => {
       role: "Member",
       age: "55",
       profession: "Business",
-      location: "Bhadgaon, Jalgaon",
+      location: "Bhusawal, Jalgaon",
     },
     {
       sr: "07",
@@ -57,7 +57,7 @@ const Commitee = () => {
       role: "Member",
       age: "42",
       profession: "Business",
-      location: "Bhadgaon, Jalgaon",
+      location: "Bhusawal, Jalgaon",
     },
   ];
 
