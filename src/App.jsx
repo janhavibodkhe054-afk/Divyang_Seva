@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import ScrollToTop from "./components/ScrollToTop";
 import Work from "./pages/Work";
+import Gallery from "./pages/Gallery";
 // Pages
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/gallery" element={<Gallery />} />
           
         </Routes>
       </div>

@@ -13,7 +13,7 @@ const Commitee = () => {
     },
     {
       sr: "02",
-      name: "Ashok Devendra Nagdev",
+      name: "Ashok Devendas Nagdev",
       role: "Vice President",
       age: "50",
       profession: "Business",
