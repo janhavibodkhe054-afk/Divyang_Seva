@@ -122,6 +122,11 @@ Amount: ₹${amount}`;
                   </p>
 
                   <p>
+                    <span className="font-semibold">UPI ID:</span>{" "}
+                    divyangsevafoun@ucobank
+                  </p>
+
+                  <p>
                     <span className="font-semibold">Branch:</span>{" "}
                     BHUSAWAL
                   </p>
